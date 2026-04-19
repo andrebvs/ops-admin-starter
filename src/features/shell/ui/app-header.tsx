@@ -2,6 +2,7 @@ import React from "react";
 import { Badge } from "@/shared/ui/badge";
 import { Button } from "@/shared/ui/button";
 import { Card, CardContent } from "@/shared/ui/card";
+import { ThemeToggle } from "@/shared/ui/theme-toggle";
 
 type AppHeaderProps = {
   title: string;
@@ -28,6 +29,7 @@ export function AppHeader({ title, subtitle }: AppHeaderProps) {
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
+          <ThemeToggle />
           <Button variant="secondary">Area de trabalho</Button>
           <Button variant="primary">Acao primaria</Button>
         </div>

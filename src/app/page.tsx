@@ -1,16 +1,10 @@
-import { getHomeContent } from "@/features/home/application/get-home-content";
-import { BoilerplateHome } from "@/features/home/ui/boilerplate-home";
-import { getShellNavigation } from "@/features/shell/application/get-shell-navigation";
-import { AppShell } from "@/features/shell/ui/app-shell";
+import { DemoDashboardPage } from "@/features/demo/ui/demo-dashboard-page";
+import { DemoWorkspace } from "@/features/demo/ui/demo-workspace";
 
 export default function HomePage() {
   return (
-    <AppShell
-      headerTitle="Workspace inicial"
-      headerSubtitle="Layout base reutilizavel para o desenvolvimento das proximas features."
-      navigation={getShellNavigation()}
-    >
-      <BoilerplateHome content={getHomeContent()} />
-    </AppShell>
+    <DemoWorkspace path="/">
+      <DemoDashboardPage />
+    </DemoWorkspace>
   );
 }

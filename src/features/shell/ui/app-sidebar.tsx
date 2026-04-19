@@ -5,10 +5,11 @@ import { Badge } from "@/shared/ui/badge";
 import { cn } from "@/shared/ui/lib/cn";
 
 type AppSidebarProps = {
+  currentPath?: string;
   navigation: ShellNavigationSection[];
 };
 
-export function AppSidebar({ navigation }: AppSidebarProps) {
+export function AppSidebar({ currentPath, navigation }: AppSidebarProps) {
   return (
     <aside className="flex h-full flex-col rounded-[1.75rem] border border-[hsl(var(--border))] bg-[hsl(var(--card))] px-5 py-6 text-[hsl(var(--card-foreground))] shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_rgba(15,23,42,0.05)]">
       <div className="border-b border-[hsl(var(--border))] pb-5">
@@ -42,7 +43,7 @@ export function AppSidebar({ navigation }: AppSidebarProps) {
               {section.title}
             </p>
             <ul className="mt-3 space-y-2">
-              {section.items.map((item, index) => (
+              {section.items.map((item) => (
                 <li key={item.label}>
                   <Link
                     href={item.href}
@@ -51,7 +52,7 @@ export function AppSidebar({ navigation }: AppSidebarProps) {
                       "border-[hsl(var(--border))] bg-[hsl(var(--card))]",
                       "hover:border-[hsl(var(--accent-border))] hover:bg-[hsl(var(--accent-subtle))]",
                       "focus-visible:ring-2 focus-visible:ring-[hsl(var(--ring))] focus-visible:ring-offset-2 focus-visible:ring-offset-[hsl(var(--card))]",
-                      index === 0 &&
+                      currentPath === item.href &&
                         "border-[hsl(var(--accent-border))] bg-[hsl(var(--accent-subtle))]",
                     )}
                   >

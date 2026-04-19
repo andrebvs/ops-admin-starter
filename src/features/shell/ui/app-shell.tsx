@@ -6,6 +6,7 @@ import { cn } from "@/shared/ui/lib/cn";
 
 type AppShellProps = {
   children: ReactNode;
+  currentPath?: string;
   headerTitle: string;
   headerSubtitle: string;
   navigation: ShellNavigationSection[];
@@ -13,6 +14,7 @@ type AppShellProps = {
 
 export function AppShell({
   children,
+  currentPath,
   headerTitle,
   headerSubtitle,
   navigation,
@@ -20,7 +22,7 @@ export function AppShell({
   return (
     <div className="min-h-screen bg-[hsl(var(--background))]">
       <div className="mx-auto grid min-h-screen w-full max-w-7xl gap-5 px-4 py-4 lg:grid-cols-[272px_minmax(0,1fr)] lg:px-6 lg:py-6">
-        <AppSidebar navigation={navigation} />
+        <AppSidebar currentPath={currentPath} navigation={navigation} />
         <div className="flex min-w-0 flex-col gap-5">
           <AppHeader title={headerTitle} subtitle={headerSubtitle} />
           <main

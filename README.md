@@ -193,8 +193,18 @@ The project includes a reusable UI foundation intended for admin and operational
 - semantic theme tokens in `src/app/globals.css`
 - shared UI primitives in `src/shared/ui`
 - a reusable app shell in `src/features/shell`
+- support for light mode and dark mode
 
 The current visual language is intentionally neutral, restrained, and suitable for internal systems.
+
+## Theme Support
+
+The starter supports `light`, `dark`, and `system` theme modes.
+
+- Light mode is the default initial mode.
+- A reusable theme toggle is available in the app shell header.
+- The selected preference is persisted locally.
+- When `system` is selected, the UI follows the operating system preference.
 
 ## Roadmap
 
