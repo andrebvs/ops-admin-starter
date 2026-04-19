@@ -1,5 +1,8 @@
 # ops-admin-starter
 
+[![CI](https://github.com/andrebvs/ops-admin-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/andrebvs/ops-admin-starter/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Reusable full-stack starter for admin and operational web systems with Next.js, TypeScript, Prisma, PostgreSQL, Tailwind CSS, and mandatory unit testing.
 
 ## Overview
