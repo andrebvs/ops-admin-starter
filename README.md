@@ -221,6 +221,6 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution guidelines.
 
 ## License
 
-No `LICENSE` file is included yet.
+This project is licensed under the MIT License.
 
-If this repository is published publicly, add the intended license before wider distribution.
+See [LICENSE.md](./LICENSE.md) for details.
