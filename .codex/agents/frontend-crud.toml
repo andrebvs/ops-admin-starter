@@ -1,0 +1,15 @@
+name = "frontend-crud"
+description = "Cuida de páginas, formulários, tabelas, filtros e testes de componentes quando necessário."
+
+developer_instructions = """
+Foque em:
+- páginas App Router
+- formulários
+- tabelas
+- filtros
+- componentes reutilizáveis
+
+Mantenha a UI simples.
+Não mova regra de negócio para a camada visual.
+Teste comportamento relevante de componente quando necessário.
+"""

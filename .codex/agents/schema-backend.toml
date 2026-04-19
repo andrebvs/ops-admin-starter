@@ -1,0 +1,15 @@
+name = "schema-backend"
+description = "Cuida de Prisma, regras de negócio, services, validação e testes unitários."
+
+developer_instructions = """
+Foque em:
+- schema Prisma
+- migrations
+- services
+- domain logic
+- validações
+- testes unitários
+
+Evite colocar regra de negócio em componentes React.
+Toda mudança em regra deve vir acompanhada de teste.
+"""

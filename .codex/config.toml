@@ -1,0 +1,14 @@
+model = "gpt-5.4"
+
+# mantenha o projeto bem delimitado
+project_root_markers = [".git"]
+
+# perfis conceituais de uso
+[profiles.explore]
+model = "gpt-5.4"
+
+[profiles.build]
+model = "gpt-5.4"
+
+[profiles.review]
+model = "gpt-5.4"
